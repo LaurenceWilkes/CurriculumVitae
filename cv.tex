@@ -1,0 +1,146 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2024 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvcolor{blue}                           % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
+\moderncvstyle[]{banking}                     % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
+                                                   % the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
+\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[hmargin=0.5in,vmargin=30pt]{geometry}                  % the 'contemporary' style looks better with reduced margins; uncomment the line below for increased margin
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+
+  % you may also consider Fira Sans Light for a extra modern look
+  %\setsansfont[ItalicFont={Fira Sans Light Italic},%
+  %           BoldFont={Fira Sans},%
+  %           BoldItalicFont={Fira Sans Italic}]%
+  %           {Fira Sans Light}%
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english]{babel}
+
+\usepackage{hyperref} % For arxiv references
+\usepackage{enumitem} % For different bullets for items
+
+% personal data
+\name{Laurence}{Wilkes}
+\title{Curriculum Vit\ae{}}                               % optional, remove / comment the line if not wanted
+\email{laurencewilkes@outlook.com}                               % optional, remove / comment the line if not wanted
+
+\social[github]{LaurenceWilkes}                              % optional, remove / comment the line if not wanted
+
+%\social[orcid]{0000-0003-4770-4980}                  % optional, remove / comment the line if not wanted
+%\social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
+%\social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
+\social[googlescholar]{LaurenceWilkes}            % optional, remove / comment the line if not wanted
+
+%\social[arxiv]{doe\_j\_1}                          % optional, remove / comment the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\vspace{-10mm}
+
+\section{Experience}
+\cventry{Apr 2025--Sep 2025}{KU Leuven}{Postdoctoral researcher}{Leuven, BE}{}{
+  \begin{minipage}{\linewidth}
+    \begin{itemize}[label=--]
+      \item Conducted research in function approximation and developed a new construction for generated point sets which is currently being expanded into a full manuscript.
+      \item Developed high-performance Julia and Python implementations of the algorithms introduced in the project, enabling reproducible experiments and large-scale numerical studies.
+    \end{itemize}
+  \end{minipage}
+}
+\cventry{Apr 2021--Mar 2025}{KU Leuven}{PhD researcher}{Leuven, BE}{}{%
+    \begin{minipage}{\linewidth}
+      \begin{itemize}[label=--]
+        \item Conducted research in the areas of function approximation and quasi-Monte Carlo methods, with a particular focus on high-dimensional approximation using structured point sets.
+        \item Published results in international journals and a peer-reviewed conference proceedings.
+        \item Presented the results at six international conferences and seminars, including two invited talks.
+        \item Invited for a research stay at the University of New South Wales in Sydney to collaborate with international experts.
+        \item Served as the teaching assistant for the Complexity Theory course for three consecutive years, leading exercise sessions and contributing to the development of exercise sets and their solutions.
+        \item Produced a well-received PhD thesis entitled \emph{High-Dimensional Approximation Using Generated Point Sets and Rank-$1$ Lattices}.
+      \end{itemize}
+    \end{minipage}
+}
+\cventry{Jul 2019--Jul 2020}{University of Warwick}{URSS Research Project}{Coventry, UK}{}{
+  \begin{minipage}{\linewidth}
+    \begin{itemize}[label=--]
+      \item Awarded a competitive URSS grant to conduct research in the area of sum-free sets in Extremal Combinatorics entitled \emph{Stability of maximum sum-free sets in a lattice}.
+      \item The work resolved a stability conjecture the proof of which was published in an international journal.
+    \end{itemize}
+  \end{minipage}
+}
+
+\section{Education}
+\cventry{2021--2025}{Doctorate in Computer Science (Numerical Mathematics)}{KU Leuven}{Leuven, BE}{}{
+  Full-time, funded research position leading to a PhD degree\\
+%  Doctoral Thesis: High-Dimensional Approximation Using Generated Point Sets and Rank-$1$ Lattices
+}
+\cventry{2015--2020}{Masters in Mathematics}{University of Warwick}{Coventry, UK}{\textbf{First class honours}}{
+    Integrated BSc and masters degree (MMath) \\
+%    Dissertation: Stability of maximum sum-free sets in a lattice
+}
+\cventry{2017--2018}{Erasmus\texttt{+} year}{University of G{\"o}ttingen}{G{\"o}ttingen, DE}{}{
+    Equivalent to 5th and 6th semesters of BSc \\
+}
+\cventry{2013--2015}{A Levels}{Beauchamp College}{Leicester, UK}{}{
+%    Subjects: Maths \textbf{A*}, Further Maths \textbf{A*}, Electronics \textbf{A}, Physics \textbf{B}, Music \textbf{C}
+    Subjects: Maths, Further Maths, Electronics, Physics, Music
+}
+
+\section{Technical skills}
+\cvitem{\textbf{Languages}}{
+  Julia (advanced), \LaTeX{} (advanced), Python (intermediate), C\texttt{++} (intermediate), Fortran (basic), Mathematica (intermediate), MATLAB (basic), HTML/CSS/JS (intermediate)
+}
+\cvitem{\textbf{Tools \& Editors}}{
+  Linux (command-line \& scripting), Vim, Git, SSH, CI/CD with GitLab, NumPy
+}
+\section{Skills, interests and achievements}
+
+\cvitemwithcomment{\textbf{Languages}}{English (Native), German (B1/B2), Polish (A1/A2), Dutch (A1/A2)}{}
+\cvitem{\textbf{Music}}{I am a keen musician and play a great deal of piano, French horn, and concertina.}
+\cvitem{\textbf{Sport}}{I very much enjoy running, cycling, trampolining, and skiing.}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"):
+%%\renewcommand{\refname}{Publications}
+%%\nocite{*}
+%%\bibliographystyle{abbrv}
+%%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+
+\end{document}
+
+%% end of file `template.tex'.
