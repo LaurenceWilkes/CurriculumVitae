@@ -62,70 +62,96 @@
 
 \makecvtitle
 
-\vspace{-10mm}
+\vspace{-5mm}
 
 \section{Experience}
-\cventry{Apr 2025--Sep 2025}{KU Leuven}{Postdoctoral researcher}{Leuven, BE}{}{
+\cventry{Apr 2025--Sep 2025}{Postdoctoral researcher}{KU Leuven}{Leuven, BE}{}{
+  \vspace{0.2em}
   \begin{minipage}{\linewidth}
-    \begin{itemize}[label=--]
+    \begin{itemize}[label=--, itemsep=0em]
       \item Conducted research in function approximation, working with a novel set of sample points that enables fast algorithm construction and efficient evaluation.
-      \item Developed high-performance Julia and Python implementations of the algorithms introduced in the project, enabling reproducible experiments and large-scale numerical studies.
+      \item Produced high-performance FFT-based implementations of the algorithms introduced in the project, enabling large-scale parallelised numerical studies.
+      \item Peer reviewer for multiple leading journals in numerical analysis.
     \end{itemize}
   \end{minipage}
+  \vspace{0.2em}
 }
-\cventry{Apr 2021--Mar 2025}{KU Leuven}{PhD researcher}{Leuven, BE}{}{%
-    \begin{minipage}{\linewidth}
-      \begin{itemize}[label=--]
-        \item Conducted research in the areas of function approximation and quasi-Monte Carlo methods, with a particular focus on high-dimensional approximation using structured point sets.
-        \item Published results in international journals and a peer-reviewed conference proceedings.
-        \item Presented the results at six international conferences and seminars, including two invited talks.
-        \item Invited for a research stay at the University of New South Wales in Sydney to collaborate with international experts.
-        \item Served as the teaching assistant for the Complexity Theory course for three consecutive years, leading exercise sessions and contributing to the development of exercise sets and their solutions.
-        \item Produced a well-received PhD thesis entitled \emph{High-Dimensional Approximation Using Generated Point Sets and Rank-$1$ Lattices}.
-      \end{itemize}
-    \end{minipage}
-}
-\cventry{Jul 2019--Jul 2020}{University of Warwick}{URSS Research Project}{Coventry, UK}{}{
+\cventry{Apr 2021--Mar 2025}{PhD researcher}{KU Leuven}{Leuven, BE}{}{%
+  \vspace{0.2em}
   \begin{minipage}{\linewidth}
-    \begin{itemize}[label=--]
-      \item Awarded a competitive URSS grant to conduct research in the area of sum-free sets in Extremal Combinatorics entitled \emph{Stability of maximum sum-free sets in a lattice}.
-      \item The work resolved a stability conjecture the proof of which was published in an international journal.
+    \begin{itemize}[label=--, itemsep=0em]
+      \item Research in function approximation and quasi-Monte Carlo methods, with emphasis on high-dimensional approximation.
+      \item Presented at international conferences and seminars, including an invited talk at the Dagstuhl seminar on Algorithms and Complexity for Continuous Problems.
+      \item Published results in international journals including the Journal of Complexity and peer-reviewed conference proceedings.
+      \item Teaching Assistant for the Complexity Theory course; led exercise sessions and co-developed problem sets with solutions.
+    \end{itemize}
+  \end{minipage}
+  \vspace{0.2em}
+}
+\cventry{Jul 2019--Jul 2020}{URSS Research Project}{University of Warwick}{Coventry, UK}{}{
+  \vspace{0.2em}
+  \begin{minipage}{\linewidth}
+    \begin{itemize}[label=--, itemsep=0em]
+      \item Awarded a competitive URSS grant conducting research in Extremal Combinatorics and Optimisation. %entitled \emph{Shape of the asymptotic maximum sum-free sets in integer lattice grids}.
+      \item The work resolved a stability conjecture the proof of which was published in the European Journal of Combinatorics.
     \end{itemize}
   \end{minipage}
 }
 
 \section{Education}
-\cventry{2021--2025}{Doctorate in Computer Science (Numerical Mathematics)}{KU Leuven}{Leuven, BE}{}{
-  Full-time, funded research position leading to a PhD degree\\
-%  Doctoral Thesis: High-Dimensional Approximation Using Generated Point Sets and Rank-$1$ Lattices
+\cventry{2021--2025}{Doctorate in Computer Science (Numerical Mathematics)}{KU Leuven}{Leuven, BE}{}{%
+  PhD Thesis: High-Dimensional Approximation Using Generated Point Sets and Rank-$1$ Lattices\\
 }
-\cventry{2015--2020}{Masters in Mathematics}{University of Warwick}{Coventry, UK}{\textbf{First class honours}}{
-    Integrated BSc and masters degree (MMath) \\
-%    Dissertation: Stability of maximum sum-free sets in a lattice
+
+\cventry{2015--2020}{Integrated Bachelor's and Master's in Mathematics}{University of Warwick}{Coventry, UK}{\textbf{First class honours}}{%
+    Dissertation: Stability of maximum sum-free sets in a lattice\\
 }
-\cventry{2017--2018}{Erasmus\texttt{+} year}{University of G{\"o}ttingen}{G{\"o}ttingen, DE}{}{
-    Equivalent to 5th and 6th semesters of BSc \\
-}
-\cventry{2013--2015}{A Levels}{Beauchamp College}{Leicester, UK}{}{
-%    Subjects: Maths \textbf{A*}, Further Maths \textbf{A*}, Electronics \textbf{A}, Physics \textbf{B}, Music \textbf{C}
-    Subjects: Maths, Further Maths, Electronics, Physics, Music
-}
+
+\cventry{2017--2018}{Erasmus\texttt{+} year}{University of G{\"o}ttingen}{G{\"o}ttingen, DE}{}{}
+
+\cventry{2013--2015}{A levels}{Beauchamp College}{Leicester, UK}{Subjects: Maths, Further Maths, Electronics, Physics, Music}{}
 
 \section{Technical skills}
-\cvitem{\textbf{Languages}}{
-  Julia~(proficient), \LaTeX{}~(proficient), Python~(intermediate), C\texttt{++}~(intermediate), JavaScript~(intermediate), MATLAB~(basic), Fortran~(basic)
+\newcommand{\indented}[1]{%
+  \par\hspace{1em}
+  \begin{minipage}[t]{\dimexpr\linewidth-1.5em}
+    #1
+  \end{minipage}
 }
-\cvitem{\textbf{Tools \& Technologies}}{
-  Linux, Vim, Git, SSH, CI/CD with GitLab, NumPy
+\vspace{-0.3em}
+\cvitem{\textbf{Programming}}{%
+  \\
+  \emph{Proficient in:} C\texttt{++}, Julia, Python (NumPy, SciPy), \LaTeX{};
+  \\
+  \emph{Experience with:} C, Fortran, Java, MATLAB, JavaScript
 }
+
+\cvitem{\textbf{Numerical mathematics}}{%
+  \\
+  Approximation theory, Numerical linear algebra, Optimisation methods, Least squares, Random matrices, PDEs and numerical solvers, Financial Engineering, DFTs and fast matrix operations, Iterative methods (Krylov, Conjugate gradients), Spectral methods
+}
+
+\cvitem{\textbf{Systems, tools \& workflows}}{%
+  \\
+  Git, Linux, SSH, CI/CD, unit testing, Vim, parallel processing (GPU, multi-threading)
+}
+
 \section{Skills, interests and achievements}
 
-\cvitemwithcomment{\textbf{Languages}}{English (Native), German (B1/B2), Polish (A1/A2), Dutch (A1/A2)}{}
-\cvitem{\textbf{Music}}{I am a keen musician and play a great deal of piano, French horn, and concertina.}
-\cvitem{\textbf{Sport}}{I very much enjoy running, cycling, trampolining, and skiing.}
+\cvitemwithcomment{\textbf{Languages}}{%
+English (Native), German (B1/B2), Polish (A1/A2), Dutch (A2)
+}{}
+
+\cvitem{\textbf{Music}}{
+  French Horn (ABRSM Grade 8), Piano (ABRSM Grade 8), Folk Instruments
+}
+
+\cvitem{\textbf{Sports}}{
+  Skiing, Running, Trampolining, Cycling
+}
+
 
 \clearpage
-
 
 \end{document}
 
